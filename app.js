@@ -79,17 +79,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // const optionTwoId = cardsChosenId[1];
     console.log(optionOneId, optionTwoId, rest);
     if (cardsChosen[0] === cardsChosen[1]) {
-      alert('You found a match!');
+      //   alert('You found a match!');
       //set the matched pics to white default
-      cards[optionOneId].setAttribute('src', 'images/white.png');
-      cards[optionTwoId].setAttribute('src', 'images/white.png');
+      //   cards[optionOneId].setAttribute('src', 'images/white.png');
+      //   cards[optionTwoId].setAttribute('src', 'images/white.png');
 
       //store the matched pair
+      //   classList.add('.success');
       cardsWon.push(cardsChosen);
     } else {
       cards[optionOneId].setAttribute('src', 'images/blank.png');
       cards[optionTwoId].setAttribute('src', 'images/blank.png');
-      alert('Sorry, Try again!');
+      //   alert('Sorry, Try again!');
     }
     //either waz reset the two arrays to start flipping again
     cardsChosen = [];

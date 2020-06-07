@@ -1,6 +1,25 @@
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
-  width: 400px;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.grid > img {
+  margin: 8px;
+  cursor: pointer;
+  box-shadow: 0 0px 5px #9c9797;
+  transition: all 0.3s ease-in-out;
+}
+
+.grid img:hover {
+  transform: scale(1.1);
 }
